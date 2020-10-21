@@ -1,0 +1,3 @@
+/* pages/demo/demo.wxss */
+.ipt{border: 1px solid #dddddd; height: 70rpx; font-size: 22rpx;}
+.kg{font-size: 22rpx;}

@@ -1,0 +1,63 @@
+
+<!-- 轮播器 
+autoplay 自动播放间隔5s
+ndicator-dots  当前选中的指示点颜色
+vertical 滑动方向是否为纵向
+previous-margin 前边距
+next-margin 后边距
+；；wxss增加pading 属性 实现banner间距
+-->
+<!-- <view class="hello">
+  <text>Hello world</text>
+</view> -->
+<button open-type="contact" type="primary" size="mini">联系客服</button>
+
+<swiper class="banner" indicator-dots autoplay previous-margin="10px" next-margin="10px">
+  <swiper-item class="a">
+    <image  mode="widthFix"></image>
+  </swiper-item>
+  <swiper-item class="b">
+    <image src="/images/images.jpeg"></image>
+  </swiper-item>
+  <swiper-item class="c">
+    <image src="/images/下载.jpeg"></image>
+  </swiper-item>
+</swiper>
+
+<swiper class="banaer2" indicator-dots vertical autoplay="3">
+  <swiper-item class="aa">
+    <image  mode="widthFix"></image>
+  </swiper-item>
+  <swiper-item class="aa">
+    <image src="/images/images.jpeg"></image>
+  </swiper-item>
+  <swiper-item class="aa">
+    <image src="/images/下载.jpeg"></image>
+  </swiper-item>
+</swiper>
+
+
+<!-- 
+  disabled 按钮禁用
+  plain  按钮镂空效果 
+-->
+<view class="button">
+
+  <button class="bu" type="primary" disabled>登录</button>
+  <button class="bu" type="primary" disabled="{{true}}">登录</button>
+
+  <button class="bu" type="primary">LOGIN</button>
+  <button class="bu" type="warn" plain>LOGIN OUT</button>
+  <button class="bu" loading>加载中。。。</button>
+  
+  <form bindsubmit='onSubmit'>
+    <input class='ipt' placeholder="请输入用户名"></input>
+    <button form-type="submit">提交</button>
+  </form>
+
+</view>
+
+<!-- 导航-跳转新页面 -->
+<view>
+  <navigator url="/pages/logs/logs">跳转到logs</navigator>
+</view>

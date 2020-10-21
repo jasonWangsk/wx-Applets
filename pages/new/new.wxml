@@ -1,0 +1,4 @@
+<!--pages/new/new.wxml-->
+<!-- {{动态数据}} -->
+<view>这是新页面--{{title}}</view>
+<view>{{content}}</view>

@@ -1,0 +1,30 @@
+<!--pages/demo/demo.wxml-->
+
+
+<view>
+  <form bindsubmit='onSubmit'>
+    <input class='ipt' placeholder="请输入手机号码" maxlength="11" type="number"></input>
+    <input class='ipt' placeholder="请输入验证码" maxlength="4"></input>
+
+    <button form-type="submit">提交</button>
+  </form>
+  <switch class="kg">开关</switch>
+</view>
+
+<view style='text-align:center'>
+  <navigator url="/pages/new/new">页面跳转</navigator>
+</view>
+
+<!-- 图标 居中 -->
+<view style="padding:50px; text-align:center">
+  <icon type="success" size="30"></icon>
+  <view>登录成功</view>
+</view>
+
+<!-- 进度条 -->
+<view style="padding:50px">
+  <progress percent="80" show-info font-size="10"></progress>
+  <!-- 动画 -->
+  <progress percent="95" show-info font-size="10" active></progress> 
+
+</view>

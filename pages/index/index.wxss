@@ -1,0 +1,31 @@
+/**index.wxss**/
+.a{background: greenyellow;}
+.b{background-color: sandybrown;}
+.c{background: seagreen;}
+.hello{width: 90px;}
+.banner{height: 200px; border:1px solid blue;}
+.banner.image{width:100%; height: 750px;}
+.aa{padding:0 5px ;background: indigo; box-sizing: border-box;}
+
+.ipt{border: 1px solid #ddd; height: 70rpx;}
+
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+}
