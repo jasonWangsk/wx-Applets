@@ -2,3 +2,38 @@
 <!-- {{动态数据}} -->
 <view>这是新页面--{{title}}</view>
 <view>{{content}}</view>
+<!-- 这是换行 -->
+<text decode>&nbsp;</text>
+<view>这是列表----
+  {{list}}
+  <view style="color:#888">
+    {{list[2]}}
+  </view>
+</view>
+
+<view>这是字典----
+  {{dic.name}},
+  {{dic.age}}
+</view>
+
+<!-- 条件渲染 -->
+<view wx:if="{{true}}">条件渲染</view>
+<view wx:if="{{false}}">条件渲染2</view>
+<view wx:if="{{1>2}}">条件渲染3</view>
+<view wx:if="{{1<2}}">条件渲染4</view>
+
+<!-- if else -->
+<view wx:if="{{1>2}}">条件渲染5</view>
+<view wx:else>哈哈哈</view>
+<text decode>&nbsp;</text>
+<!-- if elif else -->
+<view wx:if="{{lengths>11}}">{{lengths}}</view>
+<view wx:elif="{{lengths>8}}">8</view>
+<view wx:else>fail</view>
+<!-- block wx:if -->
+<block wx:if="{{false}}">
+  <navigator url="/pages/demo2/demo2"> 跳转demo2</navigator>
+</block>
+<block wx:else>
+  <navigator url="/pages/logs/logs"> 否则跳转logs</navigator>
+</block>

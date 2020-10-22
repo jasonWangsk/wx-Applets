@@ -3,31 +3,37 @@
     "pages/demo/demo",
     "pages/index/index",
     "pages/logs/logs",
-    "pages/new/new"
+    "pages/new/new",
+    "pages/demo2/demo2",
+    "pages/demo3/demo3",
+    "pages/demo4/demo4",
+    "pages/demo5/demo5"
+
 
   ],
   "window": {
-    "backgroundTextStyle": "dark",
-    "navigationBarBackgroundColor": "#A9A9A9",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#FFFAFA",
     "navigationBarTitleText": "Helloword",
     "navigationBarTextStyle": "black",
     "enablePullDownRefresh": true,
-    "backgroundColor": "#DCDCDC"
+    "backgroundColor": "#FFFAFA"
   },
   "tabBar": {
+    "backgroundColor": "#F5F5F5",
     "list": [{
       "pagePath": "pages/demo/demo",
       "text": "首页",
       "iconPath": "images/icon/home-h.png",
       "selectedIconPath": "images/icon/homes.png"
     },
-  {"pagePath": "pages/index/index",
-    "text": "我的",
-    "iconPath": "images/icon/min-m.png",
-    "selectedIconPath": "images/icon/min.png"
+    {"pagePath": "pages/index/index",
+      "text": "我的",
+      "iconPath": "images/icon/min-m.png",
+      "selectedIconPath": "images/icon/min.png"
 
-    }]
-  },
+      }]
+    },
   "style": "v2",
   "sitemapLocation": "sitemap.json"
 }

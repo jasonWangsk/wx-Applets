@@ -1,0 +1,17 @@
+<!--微信框架接口-事件-->
+<!-- 绑定触发事件 bindtap 
+currentTarget -dataset 打印前端输入数据 data-name="老王demo"
+-->
+<view bindtap="myTap" data-name="老王demo">点击-绑定事件</view>
+
+<!-- 替换色块 中参数 -->
+<view bindtap="myTap" data-name="老王demo2" data-id="11223344" style="height:60px; width:200px; background:red;">{{name}}</view>
+<!-- button 设置事件 赋值 -->
+<view>
+  <view style="background:{{bgcolor}}; width:{{wth}}px;">按钮设置内容:{{content}}</view>
+  <button type="primary" bindtap="butTap">按钮-触发事件</button>
+</view>
+
+<view style="height:1000px"></view>
+<text>微信框架接口</text>
+

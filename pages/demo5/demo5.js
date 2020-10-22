@@ -1,15 +1,10 @@
-// pages/new/new.js
+// pages/demo5/demo5.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    title:"哈哈哈哈",
-    content:"helloword",
-    list:["aaa","红红火火h",1231232132],
-    dic:{name:"wang",age:19},
-    lengths:10
 
   },
 

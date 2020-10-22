@@ -1,15 +1,16 @@
-// pages/new/new.js
+// pages/demo2/demo2.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    title:"哈哈哈哈",
-    content:"helloword",
-    list:["aaa","红红火火h",1231232132],
-    dic:{name:"wang",age:19},
-    lengths:10
+    listdata:["美国","英国","法国","中国","老毛子"],
+    listobj:[
+      {content:"美式", time:"2020-10-09"},
+      {content:"拿铁", time:"2020-10-19"},
+      {content:"kabuqin", time:"2020-11-19"}
+    ]
 
   },
 

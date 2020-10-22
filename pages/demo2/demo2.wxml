@@ -1,0 +1,18 @@
+<!--pages/demo2/demo2.wxml
+避免控台因循环输出警告信息 添加属性 wx:key="*this" 
+-->
+<view>demo2</view>
+<text decode>&nbsp;</text>
+<!-- 列表渲染
+index--索引值 -->
+<view wx:for="{{3}}" wx:key="*this">{{index}}---{{listdata}}</view>
+<!-- 列表渲染
+item--遍历列表 -->
+<text decode>&nbsp; </text>
+<view wx:for="{{listdata}}" wx:key="*this">{{item}}</view>
+<view wx:for="{{listdata}}" wx:key="*this">{{index}}-{{item}}</view>
+<!-- 列表嵌套-对象 遍历取值 -->
+<view wx:for="{{listobj}}" wx:key="*this">
+  {{index}}
+  <text>{{item.content}}</text> -- <text>{{item.time}}</text>
+</view>

@@ -1,22 +1,51 @@
-// pages/new/new.js
+// pages/demo4/demo4.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    title:"哈哈哈哈",
-    content:"helloword",
-    list:["aaa","红红火火h",1231232132],
-    dic:{name:"wang",age:19},
-    lengths:10
+    deviceInfo:""
 
+  },
+  // 路由 按钮 增加事件 跳转页面
+  clickButn:function(){
+    wx.navigateTo({
+      url: '/pages/demo3/demo3',
+    })
+
+  },
+  //view 标签实现交互跳转
+  viwTap:function(){
+    wx.navigateTo({
+      url: '/pages/demo3/demo3',
+      // 打印回调
+      success:res=>{
+        console.log(res)
+      }
+    })
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    // loding
+    wx.showLoading({
+      title: '数据加载中。。。',
+    })
+    setTimeout(res=>{
+      wx.hideLoading(),3000
+    })
+    // tost
+    wx.showToast({
+      title: '提交成功',
+      icon:""  //none
+    })
+    console.log("系统信息：",wx.getSystemInfoSync())
+    console.log("设备信息：",wx.getSystemInfoSync().model)
+    var devName=wx.getSystemInfoSync().model
+    this.setData({deviceInfo:devName})
 
   },
 

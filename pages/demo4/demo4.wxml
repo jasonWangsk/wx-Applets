@@ -1,0 +1,8 @@
+<!--pages/demo4/demo4.wxml-->
+<text>api</text>
+<view>获取设备信息:{{deviceInfo}}</view>
+<!-- 界面--交互 路由 按钮 事件-跳转-->
+<button type="primary" bindtap="clickButn">按钮-事件跳转</button>
+<!-- view标签 路由 实现交互跳转 -->
+<view style="background:#ccc" bindtap="viwTap">view标签-交互跳转</view>
+

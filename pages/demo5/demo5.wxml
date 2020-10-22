@@ -1,0 +1,13 @@
+<!-- 页面布局 -->
+<view class="out">
+  <view class="row" wx:for="{{4}}" wx:key="*this">
+  <view class="banner">
+    <image src="/images/icon/相机标志.png"></image>
+  </view>
+
+  <view class="texts">
+    <view class="title">标题</view>
+    <view class="time">20201019</view>
+  </view>
+</view>
+</view>
